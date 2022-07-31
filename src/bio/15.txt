@@ -1,0 +1,40 @@
+Hi, Thank you for your visiting my profile page.
+
+🌐 Deep understanding of the design and implementation of data driven full stack web applications.
+
+📚 Experience with the entire technology stack: server setup & configuration, database design and creation, backend development, API design and frontend web development.
+
+🛠 Designed, built and hosted web applications with scalable and modern architectures for my own businesses – Halo and Crumble.
+
+🎮 Experience with developing Virtual Reality games and immersive experiences using Unity, Blender and C#.
+
+I am an expert with the following full stack development frameworks, technologies and languages:
+
+→ Frameworks
+✅ Django
+✅ Flask
+✅ Bootstrap
+✅ AJAX
+✅ JQuery
+✅ Express
+✅ React
+✅ Redux
+
+→ Technology
+✅ MySQL
+✅ MongoDB
+✅ SAP HANA
+✅ PostgreSQL
+✅ AWS
+✅ GCP
+✅ Ubuntu Linux
+
+→ Languages
+✅ Python
+✅ Node JS
+✅ SQL
+✅ C++
+✅ C#
+✅ JavaScript
+✅ HTML
+✅ CSS

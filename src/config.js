@@ -1,9 +1,13 @@
 const skilset = [
-  "Full Stack | ",
+  "Full-Stack | ",
   "Front-End | ",
   "Back-End | ",
   "Blockchain | ",
   "Ethereum | ",
+  "NFT | ",
+  "Hardhat | ",
+  "Remix | ",
+  "Truffle | ",
   "Swift | ",
   "jQuery | ",
   "Vue | ",
@@ -61,7 +65,7 @@ const keyRoles = [
   "● Used various ideas from distributed computing, large-scale design, real-time data processing, data storage, ML, and AI to solve challenging dataset problems.",
   "● Ensuring responsiveness of applications.",
   "● Seeing through a project from conception to finished product.",
-  "● Smart Contract Development using solidity -",
+  "● Smart Contract Development using solidity",
   "● NFT Marketplace Development",
   "● Liaised with back end developers, front end developers, quality assurance testers, and CTO as needed.",
   "● Maximized applications’ efficiency, data quality, scope, operability, and flexibility.",
@@ -92,6 +96,10 @@ const keyRoles = [
   "● Implementing data storage applications and maintaining their effectiveness",
   "● Working with senior management to make sure the user experience continues to be of a high standard",
   "● Collaborating with relevant team members at all stages of the relevant processes",
+  "● Hands-on experience in developing user interface applications with JavaScript, HTML5, CSS3 and Bootstrap.",
+  "● Hands-on experience in developing secure and scalable web applications using at least one of the following frameworks/libraries - React/Angular/Vue/ DOM/BOM/Ajax/JSON/jQuery.",
+  "● Hand-on experience in developing high-performance, reusable code for Web application.",
+  "● English communication capability",
 ];
 
 const companies = [
@@ -252,9 +260,16 @@ const roles = [
   "Senior Full Stack Engineer",
   "Full Stack Engineer",
   "Senior Front End Engineer",
-  "Full Front End Engineer",
+  "Front End Engineer",
   "Senior Back End Engineer",
-  "Full Back End Engineer",
+  "Back End Engineer",
+  "Senior Blockchain Engineer",
+  "Blockchain Engineer",
+  "Senior Blockchain Developer",
+  "Blockchain Developer",
+  "Senior Defi/Dapp/Dex Developer",
+  "Blockchain Front-End Developer",
+  "Blockchain Back-End Developer",
 ]
 
 module.exports = {

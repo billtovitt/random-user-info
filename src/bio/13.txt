@@ -1,0 +1,28 @@
+Maximized applications’ efficiency, data quality, scope, operability, and flexibility.
+Used various ideas from distributed computing, large-scale design, real-time data processing, data storage, ML, and AI to solve challenging dataset problems.
+Managed, optimized, and updated PHP databases as necessary.
+Developed app integration with REST / SOAP and other APIs for Google Maps, social media logins, payment processors, and other services.
+
+
+
+Skill:
+
+Web Development Stacks (LAMP, MEAN)
+Database Technology (MySQL, Oracle, MongoDB)
+ElastiCubes and In-Chip Analytics
+HTML & CSS
+JavaScript & JS Frameworks (Angular JS, React)
+Web Markup (HTML5 & CSS3)
+Content Management Systems (Wordpress)
+Basic UI / UX Design
+Node.js
+Python
+Django
+PHP
+.NET
+Ruby on Rails
+Version Control Systems / Git
+HTTP & REST API / SOAP
+Adaptability & Accountability
+Professional Development
+Attention to Detail
