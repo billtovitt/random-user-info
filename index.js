@@ -24,7 +24,7 @@ async function main() {
   // Work Company & Experience
   var allworkedRole = [],
     perRandom = [1, 2, 3],
-    roleNum = [3, 4, 5, 6, 7];
+    roleNum = [2, 3, 4];
   for (let j = 0; j < perRandom[Math.floor(Math.random() * 3)]; j++) {
     var workedRole = [];
 

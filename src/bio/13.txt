@@ -1,28 +1,25 @@
-Maximized applications’ efficiency, data quality, scope, operability, and flexibility.
-Used various ideas from distributed computing, large-scale design, real-time data processing, data storage, ML, and AI to solve challenging dataset problems.
-Managed, optimized, and updated PHP databases as necessary.
-Developed app integration with REST / SOAP and other APIs for Google Maps, social media logins, payment processors, and other services.
+I'm a Full-Stack developer for building Website & Blockchain.
+Over 6 years, I've been working for developing full-stack project.
+For front-end UI development, React.js(Next.js)/Vue.js(Nuxt.js)/Angular 2~9 would be great option for its functionalities supported from third party library & node packages.
+I'm an expert for HTML, CSS(TailwindCSS, PostCSS, Bootstrap) and Javascript.
+For back-end development, Node.js/Express or Java Spring Boot, PHP(Laravel, Symfony), AWS(S3, Amplify, Lambda), Google firebase would be used to create Restful API service and DB management with MySQL or NoSQL MongoDB.
+I can integrate necessary services for building website through back-end development in the type of Restful API.
 
+Following techniques I own for building website & mobile applications:
+- React.js(Next.js), Vue.js(Nuxt.js), Angular 2~10, involving PWA & SPA &
+SSR
+- Node.js/Express , Socket.io, Restful API
+- DB management with MySQL & MongoDB
+- Real Time Chat integration, WebRTC, Socket.IO,
+- AWS Amplify, S3, Lambda, Cognito, Graphql, Dynamodb, Google firebase
 
+Blockchain technology
+- a cryptocurrency Smart-Contracts (Solidity, Haskell(Plutus), Rust(Solana))
+- NFT, defi games, swap, bridge, farms and staking, Web3,
+- Crypto Bot (Pancakeswap, Uniswap, Binance, Bybit, etc..)
+- Metamask, Sollet, Phantom and so on for Wallet
 
-Skill:
-
-Web Development Stacks (LAMP, MEAN)
-Database Technology (MySQL, Oracle, MongoDB)
-ElastiCubes and In-Chip Analytics
-HTML & CSS
-JavaScript & JS Frameworks (Angular JS, React)
-Web Markup (HTML5 & CSS3)
-Content Management Systems (Wordpress)
-Basic UI / UX Design
-Node.js
-Python
-Django
-PHP
-.NET
-Ruby on Rails
-Version Control Systems / Git
-HTTP & REST API / SOAP
-Adaptability & Accountability
-Professional Development
-Attention to Detail
+I also possess excellent analytical, problem-solving, and communication skills.
+As I am an individual full time developer, I can dedicate 40+ hours/week to your project
+If you choose me, I will do my best for you to provide High Quality + Fast Speed + FullTime.
+Thanks!

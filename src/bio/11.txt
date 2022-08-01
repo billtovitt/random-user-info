@@ -2,9 +2,6 @@ Hi
 Whether fixing an efficiency problem, improving workflow to improve profit, or cracking open some new website development to bring your business to the world, you can count on me to keep your business afloat online.
 I’m an expert web developer and programmer who creates new websites or adds functionality to existing ones. In short, I prepare small businesses like yours for web success.
 
-“I hired Shane after going through many other programmers. His devotion to the project really shined through. If you are looking for someone to help with your website this is your freelancer. Stop looking at other people and pick Shane!” Justin Esgar of Signmypad Inc.
-“I have the utmost respect for Shane in the way he contributed to resolving conflicts that easily could have escalated into serious problems. The quality of this work exceeds any reasonable expectations.” Mogens Eliasen of Novasol Judicare Inc.
-
 I work with PHP, MySQL, HTML5 and JavaScript every day.
 If you’re ready to get your web development or programming project off the ground and see if we’re just the right fit, just scroll up and click the green “Contact” button up on the top right to start a conversation.
 As a Fullstack MERN Developer, I developed React and React Native applications . 

@@ -1,22 +1,7 @@
-⭐️ Advanced full-stack web developer. Work experience with a wide range of projects - SAAS, e-commerce, CMS, CRM, ERP, High-Load, startups. Computer science background. My code is clean and fast.
+Expert MERN stack and Blockchain Engineer with Excellent Project Management Skills
 
-I know how to build a clean RESTful API that remains performant under high-demand situations and integrating it with SPA on the client-side.
-I have teamwork experience (Scrum/Kanban). B2B/SAAS projects.
-I constantly improve my skills by learning new technologies. Love TDD, following to SOLID/DRY, easy with OOP/MVC/ORM/REST/Unit testing.
-My apps built on a Docker so it is easy for your deploy process and a good point for making a scalable platform. My code is clean and follows all the best practices so that you will have no problems with the next improvements in your project.
+8+ years Experience + NodeJS + Microservices + ReactJS + StencilJs + Blockchain (Ethereum + Solidity + DApps + Smart Contracts + Truffle + web3.js + ether.js + NFT + Opensea)
 
-Ready for full-time projects, 8 hours per day / 5 days per week.
+I am a detail oriented professional with excellent analytical, logical, and technical skills to solve complex problems.
 
-Skills:
-- Server-side: PHP 7, Laravel, Backpack CMS
-- Methodology: OOP, MVC, ORM, RESTful API, TDD, Microservices, JWT
-- Databases: SQL (MySQL/MariaDB), NoSQL (ElasticSearch, Cassandra)
-- Browser: JavaScript, ES6, vanilla JS, VueJS (Component, VUEX, NUXT), WebSockets, canvas
-- Frontend: Webpack, Gulp, Babel, SSR
-- Responsive HTML/CSS, SASS, LESS (Bootstrap, BulmaCSS, UIkit), HTML5 Canvas
-- Tools: Composer, NPM, Yarn
-- Processes: Git flow, SVN, GitLab, CI/CD
-- Audit: security checking, Auth0, MySQL finding for slow queries, SSL/HTTPS, PageSpeed Insights improvements
-- AWS (Lambda, CloudFront, S3), serverless
-- DevOps: Linux, Docker, Docker-compose, Nginx, Bash
-- API: ERP, Stripe, Facebook, Google, Instagram etc.
+Skilled in NodeJS, ReactJS, Redux, Webpack, Express.js, AWS, NoSQL, REST, MongoDB and MySQL, Custom Web Components, Javascript, StencilJS.

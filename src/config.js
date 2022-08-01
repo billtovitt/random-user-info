@@ -1,47 +1,69 @@
 const skilset = [
-  "Full-Stack | ",
-  "Front-End | ",
-  "Back-End | ",
-  "Blockchain | ",
-  "Ethereum | ",
-  "NFT | ",
-  "Hardhat | ",
-  "Remix | ",
-  "Truffle | ",
-  "Swift | ",
-  "jQuery | ",
-  "Vue | ",
-  "Angular | ",
-  "React | ",
-  "Javascript | ",
-  "CSS | ",
-  "HTML | ",
-  "PHP | ",
-  "Python | ",
-  "Ruby | ",
-  "SQL | ",
-  "MongoDB | ",
-  "NodeJS | ",
-  "Rust | ",
-  "Solidity | ",
-  "GoLang | ",
-  "Express | ",
-  "Next | ",
-  "Ember | ",
-  "Nuxt | ",
-  "Gatsby | ",
-  "GraphQL | ",
-  "CSS | ",
-  "Less | ",
-  "Sass | ",
-  "Laravel | ",
-  "CI | ",
-  "YII | ",
-  "Drupal | ",
-  "Symfony | ",
-  "Django | ",
-  "Flask | ",
-  "FastAPI | ",
+  // Title
+  "Full-Stack, ",
+  "Front-End, ",
+  "Back-End, ",
+
+  // Blockchain
+  "Blockchain, ",
+  "Ethereum, ",
+  "Bitcoin, ",
+  "NFT, ",
+  "Remix, ",
+  "Truffle, ",
+  "Hardhat, ",
+  "Solidity, ",
+  "Rust, ",
+  "GoLang, ",
+  "Metaverse, ",
+  
+  // Normal
+  "jQuery, ",
+  "Javascript, ",
+  "CSS, ",
+  "HTML, ",
+
+  // Front-End
+  "Swift, ",
+  "React, ",
+  "Angular, ",
+  "Vue, ",
+  "CSS, ",
+  "Less, ",
+  "Sass, ",
+
+  // Backend
+  "NodeJS, ",
+  "Python, ",
+  "PHP, ",
+  "Ruby, ",
+
+  // Database
+  "SQL, ",
+  "MongoDB, ",
+  "Firebase, ",
+  
+  // javascript frameworks
+  "Express, ",
+  "Next, ",
+  "Gatsby, ",
+  "Ember, ",
+  "Nuxt, ",
+  
+  // PHP frameworks
+  "Laravel, ",
+  "CI, ",
+  "YII, ",
+  "Drupal, ",
+  "Symfony, ",
+
+  // Python framework
+  "Django, ",
+  "Flask, ",
+  "FastAPI, ",
+
+  // API
+  "GraphQL, ",
 ];
 
 const keyRoles = [
@@ -100,6 +122,15 @@ const keyRoles = [
   "● Hands-on experience in developing secure and scalable web applications using at least one of the following frameworks/libraries - React/Angular/Vue/ DOM/BOM/Ajax/JSON/jQuery.",
   "● Hand-on experience in developing high-performance, reusable code for Web application.",
   "● English communication capability",
+  "● Determining the structure and design of web pages.",
+  "● Ensuring user experience determines design choices.",
+  "● Developing features to enhance the user experience.",
+  "● Striking a balance between functional and aesthetic design.",
+  "● Ensuring web design is optimized for smartphones.",
+  "● Building reusable code for future use.",
+  "● Optimizing web pages for maximum speed and scalability.",
+  "● Utilizing a variety of markup languages to write web pages.",
+  "● Maintaining brand consistency throughout the design.",
 ];
 
 const companies = [

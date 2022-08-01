@@ -1,40 +1,30 @@
-Hi, Thank you for your visiting my profile page.
+Hello Dear!
+Thank you for reaching to my profile.
 
-🌐 Deep understanding of the design and implementation of data driven full stack web applications.
+Within 7+ years, I have been working with Web and Mobile developer focussed on Blockchain, Crypto-related projects, building custom Apps, Crypto Gambling and Betting platforms, Trading Platforms and Exchanges, crypto lending and payment solutions.
 
-📚 Experience with the entire technology stack: server setup & configuration, database design and creation, backend development, API design and frontend web development.
+➤➤ Web Skills:
+✓ Node.js / Express.js / Vue.js
+✓ React.JS / Redux / Mobx
+✓ Angular.JS / Backbone.JS / Javascript / jQuery
+✓ PHP / Laravel / CodeIgniter
+✓ MySQL / SQLite / MongoDB / PostgreSQL
+✓ Deployment on Heroku / VPS / Amazon Web Services (AWS) / DigitalOcean
+✓ Git / Bitbucket / Trello / etc.
 
-🛠 Designed, built and hosted web applications with scalable and modern architectures for my own businesses – Halo and Crumble.
+➤➤ Mobile Skills:
+✓ Flutter / React Native / Android / React Native
+✓ Google Firebase Real Time Communication / Third Party Api integration
 
-🎮 Experience with developing Virtual Reality games and immersive experiences using Unity, Blender and C#.
+➤➤Blockchain Skills:
+✓ Clear understand about Ethereum, Binance, Solana blockchain Network
+✓ Solidity / Rust programming language
+✓ Token Creating / NFT, Swap / Farming / Staking / Trading / Bot / Forking…
 
-I am an expert with the following full stack development frameworks, technologies and languages:
+NO WORRIES ABOUT MY SKILLS and SERVICES.
+I will work full time for you and I can work on your timezone.
 
-→ Frameworks
-✅ Django
-✅ Flask
-✅ Bootstrap
-✅ AJAX
-✅ JQuery
-✅ Express
-✅ React
-✅ Redux
+If you are ready, what makes you hesitate?
+Please Click "Hire" button.
 
-→ Technology
-✅ MySQL
-✅ MongoDB
-✅ SAP HANA
-✅ PostgreSQL
-✅ AWS
-✅ GCP
-✅ Ubuntu Linux
-
-→ Languages
-✅ Python
-✅ Node JS
-✅ SQL
-✅ C++
-✅ C#
-✅ JavaScript
-✅ HTML
-✅ CSS
+Thank you.
