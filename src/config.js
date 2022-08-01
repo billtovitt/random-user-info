@@ -307,6 +307,29 @@ const languages = {
   "PY": "Spanish",
 }
 
+const timezone = {
+  "UA": "+3 Eastern Europe",
+  "GR": "+3 Eastern Europe",
+  "AT": "+2 Berlin",
+  "SE": "+2 Berlin",
+  "HR": "+2 Berlin",
+  "BE": "+2 Berlin",
+  "DK": "+2 Berlin",
+  "BG": "+3 Eastern Europe",
+  "RO": "+3 Eastern Europe",
+  "CA": "-4 Eastern Time(US & Canada)",
+  "MX": "-5 Mexico City",
+  "BR": "-3 NE Brazil",
+  "AU": "+10 Sydney",
+  "AR": "-3 E Argentina",
+  "CO": "-5 Central Time",
+  "PE": "-5 Central Time",
+  "CL": "-4 Eastern Time - Indiana",
+  "VE": "-4 Eastern Time - Indiana",
+  "UY": "-3 NE Brazil",
+  "PY": "-4 Eastern Time - Indiana",
+}
+
 const skilset = [
   // Title
   "Full-Stack, ",
@@ -604,6 +627,7 @@ module.exports = {
   countryCode,
   universities,
   languages,
+  timezone,
   roles,
   companies,
   skilset,

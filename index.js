@@ -2,6 +2,7 @@ const {
   countryCode,
   universities,
   languages,
+  timezone,
   skilset,
   keyRoles,
   companies,
@@ -49,7 +50,10 @@ function getUserInfo() {
 
 function genUniversity(countryCode) {
   var uniNum = randomData([2, 3]);
-  var bachelor = ["Master of Computer Science", "Master of Computer Science (MSCS)"];
+  var bachelor = [
+    "Master of Computer Science",
+    "Master of Computer Science (MSCS)",
+  ];
   var area = ["Computer science", "Business", "Computer engineering"];
   var universityInfo = [];
   var flag = true;
@@ -240,14 +244,19 @@ async function main() {
   var bio = getBio();
 
   var password = getPassword();
-  
+
   var hrRate = getHourlyRate();
 
-  // console.log(userInfo);
-
   // Print
+
   console.log("==============  New Member is joining  ================");
-  console.log(userInfo.firstName, userInfo.lastName);
+  console.log(userInfo.firstName, userInfo.lastName, new Date().getDate());
+
+  console.log("==========  start here for mail =========");
+  console.log("https://minuteinbox.com");
+
+  console.log("==========  signup =========");
+  console.log("https://www.upwork.com/nx/signup/");
 
   console.log("==============  country  ================");
   console.log(userInfo.email.split("@")[0]);
@@ -274,22 +283,22 @@ async function main() {
       console.log(allworkedRole[j].workedRole[k]);
     }
   }
-  
+
   console.log("================= Universities ====================");
-  for(let i = 0 ; i < univers.universityInfo.length ; i++) {
+  for (let i = 0; i < univers.universityInfo.length; i++) {
     var oneUniversity = univers.universityInfo[i];
     console.log(oneUniversity);
   }
 
   console.log("============= Native Language  ==============");
   console.log(languages[userInfo.address.countryCode]);
-  
+
   console.log("============= hourly rate  ============");
   console.log(hrRate);
-  
+
   console.log("============= all skills  ============");
   console.log(allSkills);
-  
+
   console.log("=========   Bio  =========");
   console.log(bio);
 
@@ -304,8 +313,17 @@ async function main() {
   console.log("==========  zip code  =========");
   console.log(userInfo.address.zip);
 
+  console.log("==========  almost done =========");
+  console.log("https://www.upwork.com/freelancers/settings/contactInfo");
+
   console.log("==========  phone  =========");
   console.log(userInfo.phone);
+
+  console.log("==========  Security question  =========");
+  console.log("butcher");
+
+  console.log("==========  timezone  =========");
+  console.log(timezone[userInfo.address.countryCode]);
 }
 
 main();
