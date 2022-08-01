@@ -1,16 +1,23 @@
-const { skilset, keyRoles, companies, roles } = require("./src/config");
-const names = require("american-sounding-names");
+const {
+  countryCode,
+  universities,
+  skilset,
+  keyRoles,
+  companies,
+  roles,
+} = require("./src/config");
+const Fakerator = require("fakerator");
+const generator = require("generate-password");
 
-async function main() {
-  var allInfo = {};
+function randomData(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
 
-  var name = names({ gender: "male" });
-
-  // Title
+function getTitle() {
   var title = "",
     flag = true;
   while (flag) {
-    var subTitle = skilset[Math.floor(Math.random() * skilset.length)];
+    var subTitle = randomData(skilset);
     if ((title + subTitle).length < 70) {
       if (title.indexOf(subTitle) === -1) {
         title += subTitle;
@@ -19,18 +26,109 @@ async function main() {
       flag = false;
     }
   }
-  title = title.slice(0, title.length - 3);
+  return title.slice(0, title.length - 3);
+}
 
-  // Work Company & Experience
+function getUserInfo() {
+  var countryFlag = true;
+  var userInfo;
+  var ranCountryAlphaTwoCode = randomData(countryCode);
+
+  while (countryFlag) {
+    var fakerator = Fakerator();
+    userInfo = fakerator.entity.user();
+
+    if (userInfo.address.countryCode === ranCountryAlphaTwoCode) {
+      countryFlag = false;
+    }
+  }
+
+  return userInfo;
+}
+
+function genUniversity(countryCode) {
+  var uniNum = randomData([2, 3]);
+  var bachelor = ["Master of Computer Science", "Bachelor of Computer Science"];
+  var area = ["Computer science", "Business", "Computer application"];
+  var universityInfo = [];
+  var flag = true;
+
+  var durationArr = [3, 4, 5];
+  var dateArr = [2000, 2001, 2002, 2003, 2004, 2005];
+  var monthArr = [
+    "January",
+    "Febrary",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  var startYear, startMonth;
+  var lastYear, lastMonth;
+
+  while (flag) {
+    if (lastYear || lastMonth) {
+      startYear = lastYear;
+      startMonth = lastMonth;
+    } else {
+      startYear = randomData(dateArr);
+      startMonth = randomData(monthArr);
+    }
+
+    var endYear = startYear + randomData(durationArr),
+      endMonth = randomData(monthArr);
+
+    var randomUnivers = randomData(universities[countryCode]);
+
+    if (
+      universityInfo.findIndex((item) => item.name === randomUnivers) === -1
+    ) {
+      universityInfo.push({
+        name: randomUnivers,
+        bachelor: randomData(bachelor),
+        area: randomData(area),
+        from: `${startMonth}-${startYear}`,
+        to: `${endMonth}-${endYear}`,
+      });
+    }
+
+    lastYear = endYear;
+    lastMonth = endMonth;
+
+    if (universityInfo.length === uniNum) {
+      flag = false;
+    }
+  }
+
+  return {
+    universityInfo,
+    lastMonth,
+    lastYear,
+  };
+}
+
+function getAllWorkedRole(userInfo, univers) {
   var allworkedRole = [],
-    perRandom = [1, 2, 3],
-    roleNum = [2, 3, 4];
-  for (let j = 0; j < perRandom[Math.floor(Math.random() * 3)]; j++) {
+    perRandom = [2, 3, 4],
+    roleNum = [2, 3, 4],
+    lastComYear = "",
+    lastComMonth = "";
+
+  var univers = genUniversity(userInfo.address.countryCode);
+
+  for (let j = 0; j < randomData(perRandom); j++) {
     var workedRole = [];
 
-    while (workedRole.length <= roleNum[Math.floor(Math.random() * 5)]) {
+    while (workedRole.length <= randomData(roleNum)) {
       let workFlag = false;
-      var workRole = keyRoles[Math.floor(Math.random() * keyRoles.length)];
+      var workRole = randomData(keyRoles);
       for (let k = 0; k < workedRole.length; k++) {
         if (workedRole[k] === workRole) {
           workFlag = true;
@@ -41,27 +139,51 @@ async function main() {
       }
     }
 
-    var company = companies[Math.floor(Math.random() * companies.length)];
-    var role = roles[Math.floor(Math.random() * roles.length)];
-    
-    var durationArr = [1,2,3,4,5];
-    var dateArr = [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015];
-    var monthArr = ["January", "Febrary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    var started = dateArr[Math.floor(Math.random() * dateArr.length)];
-    
+    var company = randomData(companies);
+    var role = randomData(roles);
+
+    var durationArr = [1, 2, 3, 4];
+    var monthArr = [
+      "January",
+      "Febrary",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    var startComYear = univers.lastYear;
+    var startComMonth = univers.lastMonth;
+
+    if (lastComYear || lastComMonth) {
+      startComYear = lastComYear;
+      startComMonth = lastComMonth;
+    }
+
+    lastComYear = startComYear + randomData(durationArr);
+    lastComMonth = randomData(monthArr);
+
     allworkedRole.push({
-      startedDate: `${monthArr[Math.floor(Math.random() * monthArr.length)]}-${started}`,
-      endDate: `${monthArr[Math.floor(Math.random() * monthArr.length)]}-${started+durationArr[Math.floor(Math.random() * durationArr.length)]}`,
+      startedDate: `${startComMonth}-${startComYear}`,
+      endDate: `${lastComMonth}-${lastComYear}`,
       company,
       role,
       workedRole,
     });
   }
+  return allworkedRole;
+}
 
+function getAllSkills() {
   var allSkills = [],
     flag = true;
   while (flag) {
-    var subSkill = skilset[Math.floor(Math.random() * skilset.length)];
+    var subSkill = randomData(skilset);
     if (allSkills.length <= 15) {
       if (allSkills.indexOf(subSkill) === -1) {
         allSkills.push(subSkill);
@@ -70,39 +192,92 @@ async function main() {
       flag = false;
     }
   }
-  
-  var bioNum = 16;
-  var bioArr = [];
-  for(let i = 1 ; i <= bioNum ; i++) {
-    bioArr.push(`${i}.txt`);
-  }
-
-  allInfo = {
-    name,
-    title,
-    allworkedRole,
-    allSkills,
-  };
-
-  // Print
-  console.log(allInfo.name);
-  console.log(allInfo.title);
-  for (let j = 0; j < allInfo.allworkedRole.length; j++) {
-    console.log("");
-    console.log("========= title ==========");
-    console.log(allInfo.allworkedRole[j].role);
-    console.log("========= company ==========");
-    console.log(allInfo.allworkedRole[j].company);
-    console.log("========= Date ==========");
-    console.log(allInfo.allworkedRole[j].startedDate, allInfo.allworkedRole[j].endDate);
-    console.log("========= experience ==========");
-    for (let k = 0; k < allInfo.allworkedRole[j].workedRole.length; k++) {
-      console.log(allInfo.allworkedRole[j].workedRole[k]);
-    }
-  }
-  console.log(allInfo.allSkills);
-  console.log("=========   Bio  =========");
-  console.log(bioArr[Math.floor(Math.random() * bioArr.length)]);
+  return allSkills;
 }
 
-main()
+function getBio() {
+  var bioNum = 45;
+  var bioArr = [];
+  for (let i = 1; i <= bioNum; i++) {
+    bioArr.push(`${i}.txt`);
+  }
+  return randomData(bioArr);
+}
+
+function getPassword() {
+  var pLength = [5, 6, 7, 8, 9];
+  var password = generator.generate({
+    length: 10 + randomData(pLength),
+    numbers: true,
+    uppercase: true,
+    symbols: true,
+    lowercase: true,
+  });
+  return password;
+}
+
+async function main() {
+  // get title
+  var title = getTitle();
+
+  // get all user info
+  var userInfo = getUserInfo();
+
+  // get university
+  var univers = genUniversity(userInfo.address.countryCode);
+
+  // get worked company & experience
+  var allworkedRole = getAllWorkedRole(userInfo, univers);
+
+  var allSkills = getAllSkills();
+
+  var bio = getBio();
+
+  var password = getPassword();
+
+  // console.log(userInfo);
+
+  // Print
+  console.log("==============  New Member is joining  ================");
+  console.log(userInfo.firstName, userInfo.lastName);
+
+  console.log("==============  country  ================");
+  console.log(userInfo.address.country);
+
+  console.log("==============  password  ================");
+  console.log(password);
+
+  console.log("==============  Universities  ==============");
+  console.log(univers);
+
+  console.log("========== title ==========")
+  console.log(title);
+
+  for (let j = 0; j < allworkedRole.length; j++) {
+    console.log("");
+    console.log("========= title ==========");
+    console.log(allworkedRole[j].role);
+    console.log("========= company ==========");
+    console.log(allworkedRole[j].company);
+    console.log("========= Date ==========");
+    console.log(allworkedRole[j].startedDate, allworkedRole[j].endDate);
+    console.log("========= experience ==========");
+    for (let k = 0; k < allworkedRole[j].workedRole.length; k++) {
+      console.log(allworkedRole[j].workedRole[k]);
+    }
+  }
+  
+  console.log("================= Universities ====================");
+  for(let i = 0 ; i < univers.universityInfo.length ; i++) {
+    var oneUniversity = univers.universityInfo[i];
+    console.log(oneUniversity);
+  }
+  
+  console.log("============= all skills  ============")
+  console.log(allSkills);
+  
+  console.log("=========   Bio  =========");
+  console.log(bio);
+}
+
+main();
