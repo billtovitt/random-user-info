@@ -1,6 +1,7 @@
 const {
   countryCode,
   universities,
+  languages,
   skilset,
   keyRoles,
   companies,
@@ -48,8 +49,8 @@ function getUserInfo() {
 
 function genUniversity(countryCode) {
   var uniNum = randomData([2, 3]);
-  var bachelor = ["Master of Computer Science", "Bachelor of Computer Science"];
-  var area = ["Computer science", "Business", "Computer application"];
+  var bachelor = ["Master of Computer Science", "Master of Computer Science (MSCS)"];
+  var area = ["Computer science", "Business", "Computer engineering"];
   var universityInfo = [];
   var flag = true;
 
@@ -94,8 +95,8 @@ function genUniversity(countryCode) {
         name: randomUnivers,
         bachelor: randomData(bachelor),
         area: randomData(area),
-        from: `${startMonth}-${startYear}`,
-        to: `${endMonth}-${endYear}`,
+        from: startYear,
+        to: endYear,
       });
     }
 
@@ -216,6 +217,11 @@ function getPassword() {
   return password;
 }
 
+function getHourlyRate() {
+  var arr = [35, 40, 45, 50, 55, 60, 65, 70];
+  return randomData(arr);
+}
+
 async function main() {
   // get title
   var title = getTitle();
@@ -234,6 +240,8 @@ async function main() {
   var bio = getBio();
 
   var password = getPassword();
+  
+  var hrRate = getHourlyRate();
 
   // console.log(userInfo);
 
@@ -242,15 +250,15 @@ async function main() {
   console.log(userInfo.firstName, userInfo.lastName);
 
   console.log("==============  country  ================");
+  console.log(userInfo.email.split("@")[0]);
+
+  console.log("==============  country  ================");
   console.log(userInfo.address.country);
 
   console.log("==============  password  ================");
   console.log(password);
 
-  console.log("==============  Universities  ==============");
-  console.log(univers);
-
-  console.log("========== title ==========")
+  console.log("========== title ==========");
   console.log(title);
 
   for (let j = 0; j < allworkedRole.length; j++) {
@@ -272,12 +280,32 @@ async function main() {
     var oneUniversity = univers.universityInfo[i];
     console.log(oneUniversity);
   }
+
+  console.log("============= Native Language  ==============");
+  console.log(languages[userInfo.address.countryCode]);
   
-  console.log("============= all skills  ============")
+  console.log("============= hourly rate  ============");
+  console.log(hrRate);
+  
+  console.log("============= all skills  ============");
   console.log(allSkills);
   
   console.log("=========   Bio  =========");
   console.log(bio);
+
+  console.log("==========  user address  =========");
+
+  console.log("==========  street address  =========");
+  console.log(userInfo.address.street);
+
+  console.log("==========  city  =========");
+  console.log(userInfo.address.city);
+
+  console.log("==========  zip code  =========");
+  console.log(userInfo.address.zip);
+
+  console.log("==========  phone  =========");
+  console.log(userInfo.phone);
 }
 
 main();

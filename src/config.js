@@ -35,6 +35,7 @@ const universities = {
     "Ivano-Frankivsk National Medical University",
     "Lviv Polytechnic National University",
   ],
+  // Greece
   "GR": [
     "National and Kapodistrian University of Athens",
     "Aristotle University of Thessaloniki",
@@ -281,6 +282,29 @@ const universities = {
     "Universidad Americana",
     "National University of Asuncion",
   ],
+}
+
+const languages = {
+  "UA": "Ukrainian",
+  "GR": "Greek",
+  "AT": "German",
+  "SE": "Swedish",
+  "HR": "Croatian",
+  "BE": "Dutch",
+  "DK": "Danish",
+  "BG": "Bulgarian",
+  "RO": "Romanian",
+  "CA": "English",
+  "MX": "Spanish",
+  "BR": "Portuguese",
+  "AU": "Australian",
+  "AR": "Spanish",
+  "CO": "Spanish",
+  "PE": "Spanish",
+  "CL": "Spanish",
+  "VE": "Spanish",
+  "UY": "Spanish",
+  "PY": "Spanish",
 }
 
 const skilset = [
@@ -579,6 +603,7 @@ const roles = [
 module.exports = {
   countryCode,
   universities,
+  languages,
   roles,
   companies,
   skilset,
