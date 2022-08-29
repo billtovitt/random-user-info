@@ -49,9 +49,9 @@ function getUserInfo() {
 }
 
 function genUniversity(countryCode) {
-  var uniNum = randomData([2, 3]);
+  var uniNum = randomData([1, 2, 3]);
   var bachelor = [
-    "Master of Computer Science",
+    "Bachelor of Computer Science (BCompSc)",
     "Master of Computer Science (MSCS)",
   ];
   var area = ["Computer science", "Business", "Computer engineering"];
@@ -121,7 +121,7 @@ function genUniversity(countryCode) {
 
 function getAllWorkedRole(userInfo, univers) {
   var allworkedRole = [],
-    perRandom = [2, 3, 4],
+    perRandom = [2, 3],
     roleNum = [2, 3, 4],
     lastComYear = "",
     lastComMonth = "";
@@ -252,21 +252,24 @@ async function main() {
   console.log("==============  New Member is joining  ================");
   console.log(userInfo.firstName, userInfo.lastName, new Date().getDate());
 
-  console.log("==========  start here for mail =========");
-  console.log("https://minuteinbox.com");
-
+  console.log("==========  install this =========");
+  console.log("https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg/related?hl=en");
+  
   console.log("==========  signup =========");
   console.log("https://www.upwork.com/nx/signup/");
 
-  console.log("==============  country  ================");
-  console.log(userInfo.email.split("@")[0]);
+  console.log("==========  start here for mail =========");
+  console.log("https://minuteinbox.com");
 
-  console.log("==============  country  ================");
-  console.log(userInfo.address.country);
+  console.log("==============  mail  ================");
+  console.log(userInfo.email.split("@")[0]);
 
   console.log("==============  password  ================");
   console.log(password);
 
+  console.log("==============  country  ================");
+  console.log(userInfo.address.country);
+  
   console.log("========== title ==========");
   console.log(title);
 
@@ -293,31 +296,23 @@ async function main() {
   console.log("============= Native Language  ==============");
   console.log(languages[userInfo.address.countryCode]);
 
-  console.log("============= hourly rate  ============");
-  console.log(hrRate);
-
   console.log("============= all skills  ============");
   console.log(allSkills);
 
   console.log("=========   Bio  =========");
   console.log(bio);
 
-  console.log("==========  user address  =========");
+  console.log("============= hourly rate  ============");
+  console.log(hrRate);
 
-  console.log("==========  street address  =========");
-  console.log(userInfo.address.street);
-
-  console.log("==========  city  =========");
-  console.log(userInfo.address.city);
-
-  console.log("==========  zip code  =========");
-  console.log(userInfo.address.zip);
-
-  console.log("==========  almost done =========");
-  console.log("https://www.upwork.com/freelancers/settings/contactInfo");
+  console.log("==========  contact info  =========");
+  console.log(`${userInfo.address.country} hotels`);
 
   console.log("==========  phone  =========");
   console.log(userInfo.phone);
+
+  console.log("==========  almost done =========");
+  console.log("https://www.upwork.com/freelancers/settings/contactInfo");
 
   console.log("==========  Security question  =========");
   console.log("butcher");

@@ -319,7 +319,7 @@ const timezone = {
   "RO": "+3 Eastern Europe",
   "CA": "-4 Eastern Time(US & Canada)",
   "MX": "-5 Mexico City",
-  "BR": "-3 NE Brazil",
+  "BR": "-03:00 S & SE Brazil",
   "AU": "+10 Sydney",
   "AR": "-3 E Argentina",
   "CO": "-5 Central Time",
